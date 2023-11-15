@@ -53,6 +53,7 @@ button {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn__icon {
@@ -648,5 +649,131 @@ a {
   bottom: -55px;
 }
 
+/* service */
+
+.service {
+  background: #FFF6ED;
+  padding: 68px 0 100px 0;
+}
+
+.service__desc
+ {
+  color: #5E6085;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px; /* 100% */
+}
+
+.service__heading {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.service__body {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 64px;
+}
+
+.service__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item {
+  position: relative;
+  padding: 30px 22px 30px 28px;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 188, 122, 0.26);
+}
+
+.service-item + .service-item {
+  margin-top: 24px;
+}
+
+.service-item__heading {
+  color: #000958;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 22px; /* 100% */
+  padding-left: 14px;
+}
+
+.service-item__desc {
+  max-width: 244px;
+  color: #656689;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  padding-top: 18px;
+}
+
+.service-item__more {
+  position: relative;
+  display: block;
+  color: #34396A;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+  margin-top: 24px;
+}
+
+.service-item__more::after {
+  content: url(https://sondnpt00343.github.io/htmlcss-project-04/assets/icons/arrow-up-right.svg);
+  margin-left: 6px;
+  position: absolute;
+}
+
+.service__btn {
+  min-width: 214px;
+  color: #FF5B2E;
+  font-size: 16px;
+  font-weight: 500;
+  border-color: #FF5B2E;
+}
+
+.service__cta {
+  text-align: center;
+  margin-top: 42px;
+}
 
 
+.service-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+  border-radius: 5px;
+  rotate: 90deg;
+  top: 40px;
+  left: 18px;
+}
+
+.service__img {
+  width: 447px;
+  height: 621px;
+  object-fit: cover;
+}
+
+.service__media {
+  position: relative;
+  z-index: 1;
+}
+
+.service__media::after {
+  content: "";
+  position: absolute;
+  width: 410px;
+  height: 350px;
+  background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+  border-radius: 10px;
+  bottom: 3px;
+  left: 15px;
+  z-index: -1;
+}
+
+/*  */
