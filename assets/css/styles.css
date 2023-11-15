@@ -656,7 +656,8 @@ a {
   padding: 68px 0 100px 0;
 }
 
-.service__desc
+.service__desc,
+.staff__desc
  {
   color: #5E6085;
   text-align: center;
@@ -665,7 +666,8 @@ a {
   line-height: 16px; /* 100% */
 }
 
-.service__heading {
+.service__heading,
+.staff__heading {
   text-align: center;
   margin-top: 15px;
 }
@@ -726,7 +728,8 @@ a {
   position: absolute;
 }
 
-.service__btn {
+.service__btn,
+.staff__btn {
   min-width: 214px;
   color: #FF5B2E;
   font-size: 16px;
@@ -734,7 +737,8 @@ a {
   border-color: #FF5B2E;
 }
 
-.service__cta {
+.service__cta,
+.staff__cta {
   text-align: center;
   margin-top: 42px;
 }
@@ -776,4 +780,88 @@ a {
   z-index: -1;
 }
 
-/*  */
+/* Staff */
+
+.staff {
+  padding: 130px 0;;
+}
+
+.staff__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 59px;
+}
+
+.staff-item__title {
+  color: #656689;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px; /* 100% */
+  margin-top: 29px;
+}
+
+.staff-item__heading {
+  color: #000958;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 22px; /* 100% */
+  margin-top: 14px;
+}
+
+.staff__cta {
+  margin-top: 48px;
+}
+
+.staff-item__media {     
+  position: relative;
+}
+
+.staff__img {
+  display: block;
+  border-radius: 129.5px;
+}
+
+.staff-item__media::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  z-index: -1;
+  width: 234px;
+  height: 266px;
+  border-radius: 129.5px;
+  background: linear-gradient(180deg, #90CCFF 0%, #59A8EB 95.96%);
+}
+
+.staff-item:nth-child(2) .staff-item__media::after {
+  background: linear-gradient(180deg, #FF997E 0%, #F3752E 100%);
+}
+
+.staff-item:nth-child(3) .staff-item__media::after {
+  background: linear-gradient(180deg, #FABF3E 0%, #FFA14A 100%);
+}
+
+.staff-item:last-child .staff-item__media::after {
+  background: linear-gradient(180deg, #5BD6E2 0%, #00A7CC 100%);
+}
+
+.staff__derco {
+  position: absolute;
+}
+
+.staff-item:nth-child(2n+1) .staff__derco {
+  bottom: 0;
+  left: -18px;
+}
+
+.staff-item:nth-child(2n) .staff__derco {
+  top: 14px;
+  left: -18px;
+}
+
+
+
+
+
