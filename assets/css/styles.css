@@ -48,7 +48,7 @@ button {
   text-align: center;
   line-height: 56px;
   border: 1px solid #000958;
-  border-radius: 9999px;
+  border-radius: 50px;
 }
 
 a {
@@ -860,6 +860,155 @@ a {
   top: 14px;
   left: -18px;
 }
+
+ /* Pricing */
+
+ .pricing {
+  padding: 86px 0;
+  background: #FFF6ED;
+ }
+
+ .pricing__top {
+  position: relative;
+ }
+
+ .pricing__icon {
+  position: absolute;
+  right: 332px;
+  bottom: 29px;
+ }
+
+ .pricing__heading {
+  text-align: center;
+ }
+
+ .pricing__desc {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 709px;
+  margin-top: 24px;
+ }
+
+ .pricing-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+ }
+
+ .pricing-item {
+  padding: 30px 28px 43px;
+ }
+
+.pricing__type {
+  color: #FF5B2E;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px; /* 100% */
+}
+
+.pricing-item__heading {
+  color: #3F4065;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+  margin-top: 8px;
+}
+
+.pricing__price {
+  display: block;
+  color: #000958;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 103.03% */
+  margin-top: 24px;
+}
+
+.pricing-item__btn {
+  /* display: block; */
+  height: 44px;
+  min-width: 246px;
+  line-height: 44px;
+  border-color: rgba(255, 91, 46, 0.60);
+  color: #FF5B2E;
+  font-weight: 500;
+  margin-top: 22px;
+}
+
+.pricing-item__btn:hover,
+.active-btn {
+  background: #FF5B2E;
+  color: #fff;
+}
+.pricing-item__item {
+  position: relative;
+  color: #656689;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px; /* 100% */
+  padding-left: 26px;
+}
+
+.pricing-item__item + .pricing-item__item {
+  margin-top: 18px;
+}
+
+.pricing-item__item:first-child {
+  margin-top: 24px;
+}
+
+.pricing-item:not(.pricing-item:last-child){
+  margin-right: 44px;
+}
+
+.pricing-item {
+  border-radius: 20px;
+  background: #FFF;
+}
+
+.pricing__btn {
+  position: relative;
+  border-color: #ff997a;
+  min-width: 276px;
+  height: 56px;
+  line-height: 56px;
+  color: #FF5B2E;
+  text-align: left;
+  padding-left: 40px;
+  margin-top: 38px;
+}
+.pricing__btn::before {
+  position: absolute;
+  content: "Yearly";
+  display: inline-block;
+  width: 51px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  background: #FF5B2E;
+  border-radius: 50px;
+  color: #fff;
+  padding: 20px 40px;
+  right: 0;
+  top: -1px;
+}
+
+.pricing__link {
+  text-align: center;
+}
+
+.pricing-item__item::before {
+  content: url(https://sondnpt00343.github.io/htmlcss-project-04/assets/icons/price-check.svg);
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+/*  */
+
+
+
 
 
 
